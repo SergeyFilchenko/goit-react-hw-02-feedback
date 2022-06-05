@@ -1,6 +1,6 @@
 import { Component } from 'react';
-import Section from './components/Section/Section';
 import FeedbackOptions from './components/FeedbackOptions/FeedbackOptions';
+import Section from './components/Section/Section';
 import Statistics from 'components/Statistics/Statistics';
 import NotificationMessage from 'components/NotificationMessage/NotificationMessage';
 
@@ -13,7 +13,7 @@ class App extends Component {
 
   updateQuantityFeedbeacks = e => {
     const key = e.target.id;
-    this.state(ps => ({ [key]: ps[key] + 1 }));
+    this.setState(ps => ({ [key]: ps[key] + 1 }));
   };
 
   countTotalFeedback = () =>
